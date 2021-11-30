@@ -127,7 +127,7 @@ const Board = () => {
       }
   
       //socketRef.current = io.connect('/');
-      socketRef.current = io.connect('https://stormy-stream-77637.herokuapp.com/');
+      socketRef.current = io.connect('http://35.176.129.197:3001/');
       socketRef.current.on('drawing', onDrawingEvent);
     }, []);
   
