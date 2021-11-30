@@ -127,7 +127,7 @@ const Board = () => {
       }
   
       //socketRef.current = io.connect('/');
-      socketRef.current = io.connect('http://35.176.129.197:3001/');
+      socketRef.current = io.connect('http://loadbalancer-iccserver-702435424.eu-west-2.elb.amazonaws.com/');
       socketRef.current.on('drawing', onDrawingEvent);
     }, []);
   
